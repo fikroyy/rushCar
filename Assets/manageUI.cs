@@ -27,4 +27,16 @@ public class manageUI : MonoBehaviour {
             Time.timeScale = 1;
         }
     }
+
+    public void Replay(){
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void Menu(){
+        Application.LoadLevel("menuScene");
+    }
+
+    public void Exit(){
+        Application.Quit ();
+    }
 }
