@@ -15,7 +15,7 @@ public class manageUI : MonoBehaviour {
 	}
 
     public void Play() {
-        Application.LoadLevel ("Level1");
+        Application.LoadLevel ("level1");
 	}
 
     // fungsi untuk pause
