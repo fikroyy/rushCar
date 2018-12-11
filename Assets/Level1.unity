@@ -341,6 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carSpeed: 8
   maxRight: 2.11
+  ui: {fileID: 715802121}
 --- !u!60 &307717315
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -502,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b78589e73acb45289fbf012141dbf40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 1882241152}
 --- !u!4 &715802122
 Transform:
   m_ObjectHideFlags: 0
@@ -1584,7 +1586,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score
+  m_Text: 'Score :'
 --- !u!222 &1882241153
 CanvasRenderer:
   m_ObjectHideFlags: 0

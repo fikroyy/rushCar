@@ -8,8 +8,11 @@ public class carController : MonoBehaviour {
 
 	Vector3 posisi;
 
+	public manageUI ui;
+
 	void Start(){
 		// deklare posisi
+		ui = GetComponent<manageUI> (); 
 		posisi = transform.position;
 	}
 
@@ -23,6 +26,7 @@ public class carController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Enemy Car") {
 			Destroy (gameObject);
+			ui.gameOverActivated();
 		}
 	}
 }
