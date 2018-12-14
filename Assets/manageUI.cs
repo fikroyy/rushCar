@@ -44,10 +44,15 @@ public class manageUI : MonoBehaviour {
         else if (Time.timeScale == 0){
             Time.timeScale = 1;
         }
+        Application.LoadLevel("pauseScene");
     }
 
     public void Replay(){
         Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void Restart(){
+        Application.LoadLevel("level1");
     }
 
     public void Menu(){
